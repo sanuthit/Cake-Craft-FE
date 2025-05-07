@@ -140,5 +140,5 @@ const Sidebar = () => {
     </div>
   );
 };
-
+//Sidebar settings, navigating to different pages, and showing the sidebar
 export default Sidebar;

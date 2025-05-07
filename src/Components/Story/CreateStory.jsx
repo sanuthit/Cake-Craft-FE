@@ -94,7 +94,7 @@ const CreateStory = () => {
           Share a New Story
         </h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}> 
           {/* Upload Section */}
           <div
             style={{
@@ -180,3 +180,4 @@ const CreateStory = () => {
 };
 
 export default CreateStory;
+//story settings

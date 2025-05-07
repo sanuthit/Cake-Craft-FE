@@ -97,5 +97,5 @@ const HomePage = () => {
     </div>
   );
 };
-
+//css styles added fro home page
 export default HomePage;

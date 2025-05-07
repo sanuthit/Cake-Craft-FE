@@ -46,7 +46,7 @@ const Notification = () => {
                 .map(item => item.id)
         );
         setReadNotifications(readIds);
-    }, [notification.notifications]);
+    }, [notification.notifications]); 
 
     useEffect(() => {
         if (justMarkedAsRead) {
@@ -91,7 +91,7 @@ const Notification = () => {
         } catch (error) {
             toast.error("Failed to delete notification");
         } finally {
-            setLoading(false);
+            setLoading(false); // added delete notification message //
         }
     };
 
@@ -99,7 +99,7 @@ const Notification = () => {
         if (postId) {
             navigate(`/p/${postId}`);
         }
-    };
+    }; // added handleNavigateToPost function //
 
     const getNotificationIcon = (type) => {
         switch (type) {
@@ -132,7 +132,7 @@ const Notification = () => {
             case 'read':
                 return filteredNotifications.filter(item => readNotifications.has(item.id));
             default:
-                return filteredNotifications;
+                return filteredNotifications; // return all notifications if no tab is selected //
         }
     };
 
@@ -198,7 +198,7 @@ const Notification = () => {
                                             : justMarkedAsRead === item.id
                                             ? 'bg-green-50'
                                             : 'bg-white'
-                                    } transition-colors duration-200`}
+                                    } transition-colors duration-200`} 
                                 >
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0">
@@ -264,10 +264,10 @@ const Notification = () => {
                             <h5 className="modal-title">Mark as Read</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div className="modal-body">
+                        <div className="modal-body"> 
                             <p>Are you sure you want to mark this notification as read?</p>
                             {selectedNotification && (
-                                <div className="p-3 bg-light rounded">
+                                <div className="p-3 bg-light rounded"> 
                                     <div className="d-flex align-items-center gap-2">
                                         <img
                                             className="rounded-circle"
@@ -278,7 +278,7 @@ const Notification = () => {
                                         <div>
                                             <p className="mb-0">
                                                 <strong>{selectedNotification.user.username}</strong>
-                                                {" "}{selectedNotification.message}
+                                                {" "}{selectedNotification.message} 
                                             </p>
                                         </div>
                                     </div>
