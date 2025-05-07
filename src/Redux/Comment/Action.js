@@ -21,7 +21,7 @@ export const createComment = (data) => async (dispatch) => {
   console.log("created comment", resData);
   dispatch({type:CREATE_COMMENT,payload:resData}); 
   } catch (error) {
-    console.log("catch error ",error)
+    console.log("catch error ",error) 
   }
   
 
