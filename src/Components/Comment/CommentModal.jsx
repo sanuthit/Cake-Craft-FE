@@ -83,7 +83,7 @@ const CommentModal = ({
 
   const handleClose = () => {
     onClose();
-    navigate("/");
+    navigate("/"); // corrected navigation error //
   };
 
   
