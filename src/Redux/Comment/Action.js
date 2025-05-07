@@ -14,7 +14,7 @@ export const createComment = (data) => async (dispatch) => {
 
     body: JSON.stringify(data.data),
   });
-  console.log("create comment res ",res)
+  console.log("create comment res ",res) 
 
   const resData=await res.json();
 
