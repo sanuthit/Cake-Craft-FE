@@ -16,3 +16,4 @@ const SpinnerCard = () => {
 };
 
 export default SpinnerCard;
+// SpinnerCard added 
