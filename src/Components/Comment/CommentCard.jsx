@@ -119,7 +119,7 @@ const CommentCard = ({ comment }) => {
             placeholder="Add Comment..."
             type="text"
             onKeyPress={handleEditComment}
-            onChange={handleCommnetInputChange}
+            onChange={handleCommnetInputChange} // handleCommnetInputChange //
             value={commentContent} 
           /> 
         </div>
