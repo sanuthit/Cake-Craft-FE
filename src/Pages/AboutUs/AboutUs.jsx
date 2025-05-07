@@ -25,3 +25,4 @@ CakeCraft is more than a platform it’s a movement. It’s where cake-making sk
 };
 
 export default AboutUs;
+//added a bg image and a welcome message to the about us page
