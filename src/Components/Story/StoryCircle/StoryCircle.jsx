@@ -9,7 +9,7 @@ const StoryCircle = ({ image, username, userId }) => {
     navigate(`story/${userId}`);
   };
 
-  
+  //Story playing according to userId
   return (
     <div className="cursor-pointer flex flex-col items-center" onClick={handleNavigate}>
       <img className="w-16 h-16 rounded-full" src={image} alt="" />
