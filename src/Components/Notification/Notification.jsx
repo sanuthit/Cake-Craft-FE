@@ -99,7 +99,7 @@ const Notification = () => {
         if (postId) {
             navigate(`/p/${postId}`);
         }
-    };
+    }; // added handleNavigateToPost function //
 
     const getNotificationIcon = (type) => {
         switch (type) {
