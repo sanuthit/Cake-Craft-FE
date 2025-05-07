@@ -132,7 +132,7 @@ const Notification = () => {
             case 'read':
                 return filteredNotifications.filter(item => readNotifications.has(item.id));
             default:
-                return filteredNotifications;
+                return filteredNotifications; // return all notifications if no tab is selected //
         }
     };
 
