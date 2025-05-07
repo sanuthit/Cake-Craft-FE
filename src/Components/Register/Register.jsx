@@ -2,7 +2,7 @@ import { Form } from "formik";
 import React from "react";
 import "./Register.css";
 
-
+//Authentication register updatesd
 const Register = () => {
   return (
     <div>
