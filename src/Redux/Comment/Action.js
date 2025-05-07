@@ -19,7 +19,7 @@ export const createComment = (data) => async (dispatch) => {
   const resData=await res.json();
 
   console.log("created comment", resData);
-  dispatch({type:CREATE_COMMENT,payload:resData}); //
+  dispatch({type:CREATE_COMMENT,payload:resData}); 
   } catch (error) {
     console.log("catch error ",error)
   }
