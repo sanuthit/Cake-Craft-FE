@@ -93,7 +93,7 @@ const CommentCard = ({ comment }) => {
                   />
                   <MdDelete
                     className="cursor-pointer "
-                    onClick={handleDeleteComment}
+                    onClick={handleDeleteComment} 
                   />
                 </>
               )}
@@ -107,10 +107,10 @@ const CommentCard = ({ comment }) => {
           />
         ) : (
           <AiOutlineHeart
-            onClick={handleLikeComment}
-            className="text-xs hover:opacity-50 cursor-pointer "
-          />
-        )}
+            onClick={handleLikeComment} // handleLikeComment //
+            className="text-xs hover:opacity-50 cursor-pointer " 
+          /> 
+        )} 
       </div>
       {isEditCommentInputOpen && (
         <div>
@@ -120,10 +120,10 @@ const CommentCard = ({ comment }) => {
             type="text"
             onKeyPress={handleEditComment}
             onChange={handleCommnetInputChange}
-            value={commentContent}
-          />
+            value={commentContent} 
+          /> 
         </div>
-      )}
+      )} 
     </div>
   );
 };
